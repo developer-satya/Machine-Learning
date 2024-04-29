@@ -3,6 +3,8 @@ from openai import OpenAI
 
 st.title("GenAI Chatbot")
 
+
+# Replace "st.secrets["OPENAI_API_KEY"]" by original api_key
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
